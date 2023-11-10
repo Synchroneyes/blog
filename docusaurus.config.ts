@@ -64,7 +64,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/docs/intro', label: 'Blog', position: 'left'},
+        {to: '/blog/blog', label: 'Blog', position: 'left'},
         {to: '/about', label: 'A Propos', position: 'left'},
         {
           href: 'https://github.com/synchroneyes/blog',
