@@ -4,48 +4,45 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Image: string; // Path to the PNG image
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Articles',
+    Image: require('@site/static/img/article.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Plongez dans nos récits DevOps, découvrez des solutions techniques pratiques, et explorez nos architectures avec du code source. Une ressource incontournable pour les passionnés d'ingénierie cloud.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Infrastructure et Architecture',
+    Image: require('@site/static/img/settings.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Nous essayons de populer chaque article présent sur le site avec un ou plusieurs schémas d'architecture et d'infrastructure afin de donner une vue d'ensemble au problème rencontré.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Culture DevOps',
+    Image: require('@site/static/img/devops.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Au travers de ce site, nous souhaitons partager la culture DevOps grâce à plusieurs aspects. Commençant par de l'Infrastructure as Code jusqu'à une pipeline de CI/CD, nous souhaitons mettre en avant les avantages et la force de cette culture.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Image, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Image} alt={title} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
