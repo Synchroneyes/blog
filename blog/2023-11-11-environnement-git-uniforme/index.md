@@ -3,8 +3,6 @@ slug: environnement-git-uniforme
 title: Mettre en place un environnement Git uniforme pour vos équipes
 authors: [kevin]
 tags: [git, cicd, makefile, uniform]
-toc_min_heading_level: 2
-toc_max_heading_level: 5
 ---
 
 ## Introduction
@@ -98,7 +96,7 @@ Dans notre second point, l'instance_type n'existe pas, et ceci va causer un prob
 
 ## Git, une solution
 
-> Git ? C'est pas un outil de versionning ? Pourquoi tu me mets ça ici?
+> Git ? C'est un outil de versionning ? Pourquoi tu me mets ça ici?
 >
 > — Une lectrice, Alice
 
@@ -171,7 +169,7 @@ Une idée serait de créer à l'intérieur de votre repository un dossier `hooks
 
 La solution la plus simple, et bien c'est la documentation. Chaque repository devrait disposer d'un fichier `README.md` contenant la description du projet, pourquoi il existe et doit contenir des indications, que ça soit de technologie à utiliser, des commandes à utiliser pour déployer, construire ou tester l'application.
 
-Une section "conformitée" peut être créée, indiquant aux utilisateurs de copier le contenu du dossier `/hooks` à l'intérieur de leur dossier `.git/hooks`.
+Une section "conformité" peut être créée, indiquant aux utilisateurs de copier le contenu du dossier `/hooks` à l'intérieur de leur dossier `.git/hooks`.
 
 ### Via l'utilisation d'un Makefile
 
