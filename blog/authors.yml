@@ -2,10 +2,10 @@ kevin:
   name: Kevin MONVOISIN
   title: AWS Cloud Engineer
   url: https://github.com/synchroneyes
-  image_url: img/kevin-img.jpeg
+  image_url: /blog/img/kevin-img.jpeg
 
 sebastien:
   name: Sebastien CABARRUS
   title: Senior AWS Cloud Engineer
   url: https://github.com/scabarrus
-  image_url: img/sebastien-img.jpg
+  image_url: /blog/img/sebastien-img.jpg
